@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vestito</title>
+
+</head>
+<body>
+
+<h1>Vestito</h1>
+<div th:if="${dresses.isEmpty()}">Non ci sono vestiti nel sistema</div>
+<ul>
+<li th:each="dress : ${dresses}">
+<a th:href="@{'/dresses' + '/' + ${dress.id}}"
+th:text="${dress.nome} + ' (' + ${dress.prezzo} + ')'">Up! (2000)</a>
+</li>
+</ul>
+</body>
+</html>

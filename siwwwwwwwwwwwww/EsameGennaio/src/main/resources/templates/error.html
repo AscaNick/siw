@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Dress</title>
+</head>
+<body>
+<h1>Errore</h1>
+<form th:action="@{/dresses}" method="POST" th:object="${dress}">
+<div>
+<span th:text="${messaggioErrore}">Errore</span>
+</div>
+<div>
+Nome:<span><input required type="text" th:field="${dress.nome}"/></span>
+</div>

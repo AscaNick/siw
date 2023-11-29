@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cerca Vestito</title>
+<link rel="stylesheet" href="/stile.css?version=2" />
+</head>
+<body>
+<div><a href="/"><img src="/logo-siw.png" width="50%"/></a></div>
+<h1>Cerca vestito per anno</h1>
+<form th:action="@{/searchDresses}" method="post">
+<div>Prezzo: <input type="text" th:value="${prezzo}" name="prezzo" />
+</div>
+<div><input type="submit" /></div>
+</form>
+</body>
+</html>
